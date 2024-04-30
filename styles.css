@@ -1,11 +1,6 @@
-/* Reset default margin and padding */
-* {
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-}
-
-body {
     font-family: Arial, sans-serif;
     background-color: #BCE0FD; /* Light blue background */
 }
@@ -20,7 +15,7 @@ body {
 
 .button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 15px 30px; /* Adjust padding for larger touch areas */
     margin: 10px;
     border: none;
     border-radius: 5px;
@@ -30,7 +25,7 @@ body {
     text-align: center;
     font-size: 18px;
     width: 80%; /* Set the width to 80% of the container */
-    max-width: 300px; /* Limit the maximum width of the button */
+    max-width: 1000px; /* Limit the maximum width of the button */
 }
 
 .button:hover {

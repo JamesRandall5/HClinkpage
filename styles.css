@@ -24,8 +24,8 @@ body {
     text-decoration: none;
     text-align: center;
     font-size: 18px;
-    width: 80%; /* Set the width to 80% of the container */
-    max-width: 1000px; /* Limit the maximum width of the button */
+    width: calc(80% - 20px); /* Set the width to 80% of the container minus margins */
+    max-width: 300px; /* Limit the maximum width of the button */
 }
 
 .button:hover {

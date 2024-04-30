@@ -1,6 +1,11 @@
-body {
+/* Reset default margin and padding */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+body {
     font-family: Arial, sans-serif;
     background-color: #BCE0FD; /* Light blue background */
 }
@@ -24,6 +29,8 @@ body {
     text-decoration: none;
     text-align: center;
     font-size: 18px;
+    width: 80%; /* Set the width to 80% of the container */
+    max-width: 300px; /* Limit the maximum width of the button */
 }
 
 .button:hover {

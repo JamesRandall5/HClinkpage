@@ -9,6 +9,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #BCE0FD; /* Light blue background */
+    margin: 0; /* Remove default body margin */
 }
 
 .header {
@@ -62,10 +63,11 @@ body {
 }
 
 .footer {
-    position: relative; /* Changed to relative positioning */
+    position: relative; /* Relative positioning for footer */
     width: 100%;
     background-color: white; /* White background color for the footer */
     z-index: 3; /* Ensure footer appears above other content */
+    padding-bottom: 20px; /* Ensure space below footer content */
 }
 
 .footer-image {

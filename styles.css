@@ -62,9 +62,7 @@ body {
 }
 
 .footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
+    position: relative; /* Changed to relative positioning */
     width: 100%;
     background-color: white; /* White background color for the footer */
     z-index: 3; /* Ensure footer appears above other content */
@@ -72,7 +70,7 @@ body {
 
 .footer-image {
     max-width: calc(100% - 40px); /* Fit the width within the screen with margin */
-    margin: 20px; /* Add margin to match the buttons */
+    margin: 20px auto; /* Center the image horizontally and add margin */
     display: none; /* Initially hide the footer image */
 }
 

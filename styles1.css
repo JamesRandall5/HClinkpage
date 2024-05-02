@@ -34,7 +34,7 @@ body {
 }
 
 .container {
-    margin-top: 100px; /* Adjust this value to change the gap between header and buttons */
+    margin-top: 150px; /* Adjust this value to change the gap between header and buttons */
     padding: 20px;
 }
 
@@ -54,12 +54,10 @@ body {
 }
 
 .footer {
+    display: none; /* Initially hide the footer */
     background-color: white; /* White background color for the footer */
     padding: 20px;
     text-align: center;
-    position: fixed; /* Fixed position to stick footer at the bottom */
-    bottom: 0;
-    left: 0;
     width: 100%; /* Ensure the footer spans the entire width */
     z-index: 3; /* Ensure footer appears above other content */
 }

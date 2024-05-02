@@ -57,7 +57,7 @@ body {
     font-size: 18px;
     width: 90%;
     max-width: 300px;
-    height: 150px;
+    height: 60px;
 }
 
 .button:hover {
@@ -69,8 +69,12 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: white; /* White background color for the footer */
+    background-color: transparent; /* Set background color to transparent */
     z-index: 3; /* Ensure footer appears above other content */
+}
+
+.footer-inner {
+    background-color: white; /* White background color for the footer */
     padding: 20px; /* Add padding to ensure space around footer content */
     box-sizing: border-box; /* Include padding in width calculation */
 }

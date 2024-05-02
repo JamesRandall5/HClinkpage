@@ -74,12 +74,6 @@ body {
     padding: 20px 0; /* Add padding to top and bottom */
 }
 
-.footer-inner {
-    padding: 20px; /* Add padding to ensure space around footer content */
-    box-sizing: border-box; /* Include padding in width calculation */
-    text-align: center; /* Center the content horizontally */
-}
-
 .footer-image {
     max-width: calc(100% - 40px); /* Fit the width within the screen with margin */
     margin: 0 auto; /* Center the image horizontally */

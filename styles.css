@@ -22,7 +22,7 @@ body {
 .button {
     display: inline-block;
     padding: 15px 30px; /* Adjust padding for larger touch areas */
-    margin: 20px 0; /* Set margin to specify the height of the gap between buttons */
+    margin: 75px 0; /* Set margin to specify the height of the gap between buttons */
     border: none;
     border-radius: 5px;
     background-color: #004E98; /* Dark blue button */

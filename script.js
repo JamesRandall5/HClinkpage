@@ -3,11 +3,7 @@ var footerImage = document.querySelector('.footer-image');
 
 // Function to check if the user has scrolled to the bottom of the page
 function isScrolledToBottom() {
-    var scrollHeight = document.documentElement.scrollHeight;
-    var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-    var clientHeight = document.documentElement.clientHeight;
-    
-    return scrollHeight - scrollTop === clientHeight;
+    return window.innerHeight + window.scrollY >= document.body.offsetHeight;
 }
 
 // Function to toggle the visibility of the footer image

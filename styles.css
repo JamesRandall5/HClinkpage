@@ -35,14 +35,14 @@ body {
 
 .container {
     display: flex;
-    flex-wrap: wrap; /* Allow buttons to wrap to next line */
-    justify-content: center;
-    align-items: flex-start; /* Align buttons to the top */
+    flex-direction: column; /* Arrange buttons in a column */
+    align-items: center;
+    justify-content: flex-start; /* Align buttons to the top */
     margin-top: 100px; /* Add top margin for spacing */
 }
 
 .button {
-    display: inline-block;
+    display: block; /* Ensure buttons appear as blocks (one per line) */
     padding: 15px 30px;
     margin: 20px;
     border: none;
@@ -52,17 +52,11 @@ body {
     text-decoration: none;
     text-align: center;
     font-size: 18px;
-    width: calc(33% - 40px); /* Set width for 3 buttons in a row with spacing */
+    width: 90%; /* Set the width to 90% of the container */
     max-width: 300px;
     height: 150px;
 }
 
 .button:hover {
     background-color: #003366;
-}
-
-@media screen and (max-width: 768px) {
-    .button {
-        width: calc(50% - 40px); /* Set width for 2 buttons in a row with spacing on smaller screens */
-    }
 }

@@ -57,7 +57,7 @@ body {
     font-size: 18px;
     width: 90%;
     max-width: 300px;
-    height: 150px;
+    height: 60px;
 }
 
 .button:hover {
@@ -75,16 +75,14 @@ body {
 }
 
 .footer-inner {
-    display: flex; /* Use flexbox for centering */
-    justify-content: center; /* Center the content horizontally */
     padding: 20px; /* Add padding to ensure space around footer content */
     box-sizing: border-box; /* Include padding in width calculation */
+    text-align: center; /* Center the content horizontally */
 }
 
 .footer-image {
     max-width: calc(100% - 40px); /* Fit the width within the screen with margin */
-    margin-left: auto; /* Auto margin on left and right to center */
-    margin-right: auto;
+    margin: 0 auto; /* Center the image horizontally */
 }
 
 .footer-image.show {

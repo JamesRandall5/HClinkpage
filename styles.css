@@ -72,6 +72,7 @@ body {
     background-color: white; /* White background color for the footer */
     z-index: 3; /* Ensure footer appears above other content */
     padding: 20px 0; /* Add padding to top and bottom */
+    display: none; /* Initially hide the footer */
 }
 
 .footer-inner {
@@ -82,7 +83,6 @@ body {
 .footer-image {
     max-width: calc(100% - 40px); /* Fit the width within the screen with margin */
     margin: 0 auto; /* Center the image horizontally */
-    display: none; /* Initially hide the footer image */
 }
 
 .footer-image.show {

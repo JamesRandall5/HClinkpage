@@ -32,7 +32,7 @@ body {
     font-size: 18px;
     width: calc(80% - 20px); /* Set the width to 80% of the container minus margins */
     max-width: 300px; /* Limit the maximum width of the button */
-    height: 60px; /* Specify the height of the buttons */
+    height: 120px; /* Specify the height of the buttons */
 }
 
 .button:hover {

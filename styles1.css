@@ -64,7 +64,7 @@ body {
     z-index: 3; /* Ensure footer appears above other content */
 }
 
-.footer-image {
+.footer-image1 {
     max-width: 100%; /* Fit the width within the screen */
     height: auto; /* Maintain aspect ratio */
     padding: 20px; /* Add padding to the footer image */

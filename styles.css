@@ -75,9 +75,11 @@ body {
 }
 
 .footer-inner {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
     padding: 20px; /* Add padding to ensure space around footer content */
     box-sizing: border-box; /* Include padding in width calculation */
-    text-align: center; /* Center the content horizontally */
 }
 
 .footer-image {

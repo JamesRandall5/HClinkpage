@@ -1,22 +1,17 @@
-// Get the footer element with the logo
-var mainFooter = document.querySelector('.footer');
+window.addEventListener('scroll', function() {
+    var buttonContainer = document.getElementById('button-container');
+    var footer = document.querySelector('.footer');
 
-// Function to check if the user has scrolled to the bottom of the page
-function isScrolledToBottom() {
-    return window.innerHeight + window.scrollY >= document.body.offsetHeight;
-}
+    // Get the height of the viewport
+    var viewportHeight = window.innerHeight;
 
-// Function to toggle the visibility of the main footer
-function toggleMainFooter() {
-    if (isScrolledToBottom()) {
-        mainFooter.style.display = 'block';
+    // Get the bottom position of the button container
+    var buttonContainerBottom = buttonContainer.getBoundingClientRect().bottom;
+
+    // Check if the bottom of the button container is within the viewport
+    if (buttonContainerBottom <= viewportHeight) {
+        footer.style.display = 'block'; // Show the footer
     } else {
-        mainFooter.style.display = 'none';
+        footer.style.display = 'none'; // Hide the footer
     }
-}
-
-// Listen for scroll events and toggle main footer visibility
-window.addEventListener('scroll', toggleMainFooter);
-
-// Initially check if the main footer should be shown
-toggleMainFooter();
+});

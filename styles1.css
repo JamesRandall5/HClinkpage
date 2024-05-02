@@ -1,13 +1,8 @@
-/* Define CSS variables */
-:root {
-    --max-footer-image-width-desktop: 600px; /* Maximum width for desktop devices */
-}
-
-/* Media query for smaller devices */
-@media (max-width: 768px) {
-    :root {
-        --max-footer-image-width-desktop: 80%; /* Adjust maximum width for smaller devices */
-    }
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Actual Styles */
@@ -70,8 +65,8 @@ body {
 }
 
 .footer-image {
-    max-width: var(--max-footer-image-width-desktop); /* Use the variable for maximum width */
-    margin: 0 auto; /* Center the image horizontally */
+    max-width: 100%; /* Fit the width within the screen */
+    height: auto; /* Maintain aspect ratio */
     padding: 20px; /* Add padding to the footer image */
     box-sizing: border-box; /* Include padding in the width calculation */
 }

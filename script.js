@@ -1,22 +1,22 @@
-// Get the footer element
-var footer = document.querySelector('.footer');
+// Get the footer element with the logo
+var mainFooter = document.querySelector('.footer');
 
 // Function to check if the user has scrolled to the bottom of the page
 function isScrolledToBottom() {
     return window.innerHeight + window.scrollY >= document.body.offsetHeight;
 }
 
-// Function to toggle the visibility of the footer
-function toggleFooter() {
+// Function to toggle the visibility of the main footer
+function toggleMainFooter() {
     if (isScrolledToBottom()) {
-        footer.style.display = 'block';
+        mainFooter.style.display = 'block';
     } else {
-        footer.style.display = 'none';
+        mainFooter.style.display = 'none';
     }
 }
 
-// Listen for scroll events and toggle footer visibility
-window.addEventListener('scroll', toggleFooter);
+// Listen for scroll events and toggle main footer visibility
+window.addEventListener('scroll', toggleMainFooter);
 
-// Initially check if the footer should be shown
-toggleFooter();
+// Initially check if the main footer should be shown
+toggleMainFooter();

@@ -30,7 +30,7 @@ body {
     text-decoration: none;
     text-align: center;
     font-size: 18px;
-    width: 90%; /* Set the width to 80% of the container */
+    width: 90%; /* Set the width to 90% of the container */
     max-width: 300px; /* Limit the maximum width of the button */
     height: 150px; /* Specify the height of the buttons */
 }

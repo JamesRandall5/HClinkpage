@@ -1,8 +1,13 @@
-/* CSS Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Define CSS variables */
+:root {
+    --max-footer-image-width-desktop: 600px; /* Maximum width for desktop devices */
+}
+
+/* Media query for smaller devices */
+@media (max-width: 768px) {
+    :root {
+        --max-footer-image-width-desktop: 80%; /* Adjust maximum width for smaller devices */
+    }
 }
 
 /* Actual Styles */
@@ -57,4 +62,11 @@ body {
     background-color: white; /* White background color for the footer */
     padding: 20px;
     text-align: center;
+}
+
+.footer-image {
+    max-width: var(--max-footer-image-width-desktop); /* Use the variable for maximum width */
+    margin: 0 auto; /* Center the image horizontally */
+    padding: 20px; /* Add padding to the footer image */
+    box-sizing: border-box; /* Include padding in the width calculation */
 }

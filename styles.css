@@ -71,7 +71,7 @@ body {
     width: 100%;
     background-color: white; /* White background color for the footer */
     z-index: 3; /* Ensure footer appears above other content */
-    margin: 20px 0; /* Add margin to top and bottom */
+    padding: 20px 0; /* Add padding to top and bottom */
 }
 
 .footer-inner {

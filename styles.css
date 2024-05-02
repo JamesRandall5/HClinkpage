@@ -36,10 +36,10 @@ body {
 
 .container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start; /* Align buttons to the top */
-    margin-top: 100px; /* Add top margin for spacing */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 150px;
 }
 
 .button {
@@ -53,29 +53,23 @@ body {
     text-decoration: none;
     text-align: center;
     font-size: 18px;
-    width: 90%;
+    width: calc(25% - 40px); /* Adjust button width */
     max-width: 300px;
-    height: 150px;
-}
-
-.button:hover {
-    background-color: #003366;
+    height: 100px; /* Specify the height of the buttons */
 }
 
 .footer {
-    position: relative; /* Relative positioning for footer */
+    position: fixed; /* Fixed position to stick footer at the bottom */
+    bottom: 0;
+    left: 0;
     width: 100%;
     background-color: white; /* White background color for the footer */
     z-index: 3; /* Ensure footer appears above other content */
-    padding-bottom: 20px; /* Ensure space below footer content */
+    padding: 20px 0; /* Add padding to top and bottom */
+    text-align: center; /* Center the content horizontally */
 }
 
 .footer-image {
     max-width: calc(100% - 40px); /* Fit the width within the screen with margin */
-    margin: 20px auto; /* Center the image horizontally and add margin */
-    display: none; /* Initially hide the footer image */
-}
-
-.footer-image.show {
-    display: block; /* Display the footer image when at the bottom */
+    margin: 0 auto; /* Center the image horizontally */
 }

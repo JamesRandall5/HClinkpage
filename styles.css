@@ -22,7 +22,7 @@ body {
 .button {
     display: inline-block;
     padding: 15px 30px; /* Adjust padding for larger touch areas */
-    margin: 2%; /* Set margin to a percentage of container width */
+    margin: 1%; /* Set margin to a percentage of container width */
     border: none;
     border-radius: 5px;
     background-color: #004E98; /* Dark blue button */
@@ -32,7 +32,7 @@ body {
     font-size: 18px;
     width: 80%; /* Set the width to 80% of the container */
     max-width: 300px; /* Limit the maximum width of the button */
-    height: 60px; /* Specify the height of the buttons */
+    height: 200px; /* Specify the height of the buttons */
 }
 
 .button:hover {

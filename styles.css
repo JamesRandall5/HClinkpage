@@ -70,6 +70,7 @@ body {
     background-color: white; /* White background color for the footer */
     z-index: 3; /* Ensure footer appears above other content */
     transition: height 0.3s ease; /* Add smooth transition for animation */
+    margin-bottom: 20px; /* Add margin to match the buttons */
 }
 
 .footer-image {
@@ -78,7 +79,8 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 4; /* Ensure image appears above footer */
-    max-width: 100%; /* Fit the width within the screen */
+    max-width: calc(100% - 40px); /* Fit the width within the screen with margin */
+    display: none; /* Initially hide the footer image */
 }
 
 .footer:after {
@@ -100,4 +102,8 @@ body.scroll-end .footer:after {
 
 body.scroll-end .footer {
     height: 100px; /* Set the height of the footer */
+}
+
+body.scroll-end .footer-image {
+    display: block; /* Display the footer image when reaching the bottom */
 }

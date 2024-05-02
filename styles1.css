@@ -54,7 +54,7 @@ body {
 }
 
 .footer {
-    display: none; /* Initially hide the footer */
+    display: block; /* Display the footer */
     background-color: white; /* White background color for the footer */
     padding: 20px;
     text-align: center;

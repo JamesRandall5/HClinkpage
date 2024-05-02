@@ -10,8 +10,6 @@ body {
     font-family: Arial, sans-serif;
     background-color: #BCE0FD; /* Light blue background */
     margin: 0; /* Remove default body margin */
-    min-height: 100vh; /* Ensure the body covers the full viewport height */
-    position: relative; /* Set position relative to allow absolute positioning of footer */
 }
 
 .header {
@@ -57,7 +55,7 @@ body {
     font-size: 18px;
     width: 90%;
     max-width: 300px;
-    height: 60px;
+    height: 150px;
 }
 
 .button:hover {
@@ -65,18 +63,17 @@ body {
 }
 
 .footer {
-    position: fixed; /* Fixed position to stick footer at the bottom */
-    bottom: 0;
-    left: 0;
+    position: relative; /* Relative positioning for footer */
     width: 100%;
     background-color: white; /* White background color for the footer */
     z-index: 3; /* Ensure footer appears above other content */
-    padding: 20px 0; /* Add padding to top and bottom */
+    padding-bottom: 20px; /* Ensure space below footer content */
 }
 
 .footer-image {
     max-width: calc(100% - 40px); /* Fit the width within the screen with margin */
-    margin: 0 auto; /* Center the image horizontally */
+    margin: 20px auto; /* Center the image horizontally and add margin */
+    display: none; /* Initially hide the footer image */
 }
 
 .footer-image.show {

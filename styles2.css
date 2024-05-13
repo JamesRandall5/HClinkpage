@@ -49,7 +49,7 @@ body {
     text-decoration: none;
     font-size: 18px;
     max-width: 2000px; /* Adjusted max-width for the buttons */
-    height: 200px;
+    height: 150px;
     position: relative;
     overflow: hidden; /* Ensure the icon doesn't overflow */
 }

@@ -43,9 +43,9 @@ body {
 }
 
 .button {
-    display: inline-block;
+    display: block; /* Ensure each button takes up full width */
     padding: 20px 30px; /* Adjust the button height */
-    margin: 20px;
+    margin: 20px auto; /* Center the buttons horizontally */
     border: none;
     border-radius: 5px;
     background-color: #004E98;

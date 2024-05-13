@@ -1,0 +1,70 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Actual Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #BCE0FD; /* Light blue background */
+    margin: 0; /* Remove default body margin */
+}
+
+.header {
+    background-color: white; /* White header */
+    padding: 10px; /* Add padding to the header */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2; /* Ensure the header is above other content */
+}
+
+.logos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-left,
+.logo-right {
+    max-width: 100px;
+    height: auto;
+}
+
+.container {
+    margin-top: 75px; /* Adjust this value to change the gap between header and buttons */
+    padding: 20px;
+}
+
+.button {
+    display: block;
+    padding: 15px 30px;
+    margin: 20px auto;
+    border: none;
+    border-radius: 5px;
+    background-color: #004E98;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    max-width: 300px;
+    height: 100px;
+}
+
+.footer {
+    display: block; /* Display the footer */
+    background-color: white; /* White background color for the footer */
+    padding: 20px;
+    text-align: center;
+    width: 100%; /* Ensure the footer spans the entire width */
+    z-index: 3; /* Ensure footer appears above other content */
+}
+
+.footer-image1 {
+    max-width: 100%; /* Fit the width within the screen */
+    height: auto; /* Maintain aspect ratio */
+    padding: 20px; /* Add padding to the footer image */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}

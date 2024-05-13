@@ -34,7 +34,7 @@ body {
 }
 
 .container {
-    margin-top: 75px; /* Adjust this value to change the gap between header and buttons */
+    margin-top: 50px; /* Adjust this value to change the gap between header and buttons */
     padding: 20px;
 }
 

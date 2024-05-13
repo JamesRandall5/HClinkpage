@@ -34,23 +34,51 @@ body {
 }
 
 .container {
-    margin-top: 75px; /* Adjust this value to change the gap between header and buttons */
+    margin-top: 150px; /* Adjust this value to change the gap between header and buttons */
     padding: 20px;
 }
 
 .button {
     display: block;
-    padding: 15px 30px;
     margin: 20px auto;
+    padding: 15px;
     border: none;
     border-radius: 5px;
     background-color: #004E98;
     color: white;
     text-decoration: none;
-    text-align: center;
     font-size: 18px;
-    max-width: 2000px;
-    height: 100px;
+    max-width: 2000px; /* Adjusted max-width for the buttons */
+    height: auto;
+    position: relative;
+    overflow: hidden; /* Ensure the icon doesn't overflow */
+}
+
+.button-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-text {
+    text-align: left;
+}
+
+.title {
+    font-weight: bold;
+    display: block;
+}
+
+.description {
+    display: block;
+}
+
+.button-icon {
+    margin-left: 10px;
+}
+
+.button-icon img {
+    max-height: 100%; /* Ensure the icon fits within the button */
 }
 
 .footer {

@@ -14,7 +14,6 @@ body {
 
 .header {
     background-color: white; /* White header */
-    padding: 10px; /* Add padding to the header */
     position: fixed;
     top: 0;
     left: 0;
@@ -25,6 +24,8 @@ body {
 .logos {
     display: flex;
     justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .logo-left,
@@ -34,65 +35,44 @@ body {
 }
 
 .container {
-    margin-top: 150px; /* Adjust this value to change the gap between header and buttons */
-    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 100px; /* Adjust the gap between header and buttons */
 }
 
 .button {
-    display: block;
-    margin: 20px auto;
-    padding: 15px;
+    display: inline-block;
+    padding: 20px 30px; /* Adjust the button height */
+    margin: 20px;
     border: none;
     border-radius: 5px;
     background-color: #004E98;
     color: white;
     text-decoration: none;
+    text-align: center;
     font-size: 18px;
-    max-width: 2000px; /* Adjusted max-width for the buttons */
-    height: auto;
-    position: relative;
-    overflow: hidden; /* Ensure the icon doesn't overflow */
+    width: calc(25% - 40px); /* Adjust button width */
+    max-width: 300px;
 }
 
-.button-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.button-text {
-    text-align: left;
-}
-
-.title {
-    font-weight: bold;
-    display: block;
-}
-
-.description {
-    display: block;
-}
-
-.button-icon {
-    margin-left: 10px;
-}
-
-.button-icon img {
-    max-height: 100%; /* Ensure the icon fits within the button */
+.button:hover {
+    background-color: #003366;
 }
 
 .footer {
-    display: block; /* Display the footer */
+    position: fixed; /* Fixed position to stick footer at the bottom */
+    bottom: 0;
+    left: 0;
+    width: 100%;
     background-color: white; /* White background color for the footer */
-    padding: 20px;
-    text-align: center;
-    width: 100%; /* Ensure the footer spans the entire width */
     z-index: 3; /* Ensure footer appears above other content */
+    padding: 20px 0; /* Add padding to top and bottom */
+    text-align: center; /* Center the content horizontally */
 }
 
-.footer-image1 {
-    max-width: 100%; /* Fit the width within the screen */
-    height: auto; /* Maintain aspect ratio */
-    padding: 20px; /* Add padding to the footer image */
-    box-sizing: border-box; /* Include padding in the width calculation */
+.footer-image {
+    max-width: calc(100% - 40px); /* Fit the width within the screen with margin */
+    margin: 0 auto; /* Center the image horizontally */
 }

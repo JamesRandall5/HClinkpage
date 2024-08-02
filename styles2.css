@@ -43,8 +43,6 @@ body {
     align-items: center;
     justify-content: flex-start; /* Align content to the left */
     margin-top: 20px;
-    margin-left: 20px;
-    padding: 5px;
     background-color: #004E98; /* Dark blue button */
     color: white;
     text-decoration: none;

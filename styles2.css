@@ -41,16 +41,15 @@ body {
 .home-button {
     display: inline-flex; /* Use inline-flex for better alignment */
     align-items: center;
-    justify-content: center;
-    margin: 20px auto;
-    padding: 15px;
+    justify-content: flex-start; /* Align content to the left */
+    padding: 5px 10px;
     background-color: #004E98; /* Dark blue button */
     color: white;
     text-decoration: none;
     border-radius: 5px;
     font-size: 14px;
-    width: 150px; /* Custom width */
-    height: 60px; /* Custom height */
+    width: 120px; /* Custom width */
+    height: 40px; /* Custom height */
     margin-bottom: 20px; /* Space below the home button */
 }
 
@@ -58,11 +57,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .home-button-icon {
     max-height: 100%; /* Ensure the icon fits within the button */
     margin-right: 5px; /* Space between icon and text */
+    width: 20px;
+    height: 20px;
 }
 
 .button {

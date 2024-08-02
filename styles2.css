@@ -49,8 +49,8 @@ body {
     text-decoration: none;
     border-radius: 5px;
     font-size: 14px;
-    width: 100px; /* Custom width */
-    height: 40px; /* Custom height */
+    width: 150px; /* Custom width */
+    height: 60px; /* Custom height */
     margin-bottom: 20px; /* Space below the home button */
 }
 
@@ -61,7 +61,7 @@ body {
 }
 
 .home-button-icon {
-    max-height: 80%; /* Ensure the icon fits within the button */
+    max-height: 100%; /* Ensure the icon fits within the button */
     margin-right: 5px; /* Space between icon and text */
 }
 

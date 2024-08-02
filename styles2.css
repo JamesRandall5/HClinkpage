@@ -38,6 +38,32 @@ body {
     padding: 20px;
 }
 
+.home-button {
+    display: inline-flex; /* Use inline-flex for better alignment */
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    background-color: #004E98; /* Dark blue button */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100px; /* Custom width */
+    height: 40px; /* Custom height */
+    margin-bottom: 20px; /* Space below the home button */
+}
+
+.home-button-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-button-icon {
+    max-height: 100%; /* Ensure the icon fits within the button */
+    margin-right: 5px; /* Space between icon and text */
+}
+
 .button {
     display: block;
     margin: 20px auto;

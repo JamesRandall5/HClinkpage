@@ -42,7 +42,8 @@ body {
     display: inline-flex; /* Use inline-flex for better alignment */
     align-items: center;
     justify-content: center;
-    padding: 5px 10px;
+    margin: 20px auto;
+    padding: 15px;
     background-color: #004E98; /* Dark blue button */
     color: white;
     text-decoration: none;

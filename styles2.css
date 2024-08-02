@@ -42,7 +42,8 @@ body {
     display: inline-flex; /* Use inline-flex for better alignment */
     align-items: center;
     justify-content: flex-start; /* Align content to the left */
-    padding: 5px 10px;
+    margin: 20px auto;
+    padding: 15px;
     background-color: #004E98; /* Dark blue button */
     color: white;
     text-decoration: none;
@@ -63,8 +64,6 @@ body {
 .home-button-icon {
     max-height: 100%; /* Ensure the icon fits within the button */
     margin-right: 5px; /* Space between icon and text */
-    width: 20px;
-    height: 20px;
 }
 
 .button {

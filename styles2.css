@@ -43,12 +43,11 @@ body {
     align-items: center;
     justify-content: flex-start; /* Align content to the left */
     margin-top: 20px;
-    margin-bottom: 0px;
     background-color: #004E98; /* Dark blue button */
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 18px;
     width: 120px; /* Custom width */
     height: 40px; /* Custom height */
 }
